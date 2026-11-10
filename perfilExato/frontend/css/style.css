@@ -1,0 +1,344 @@
+/* =========================================================
+   HERO SECTION (Banner Principal)
+   ========================================================= */
+.hero {
+    padding: 80px 40px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 550px;
+}
+
+.eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--text-medium);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: var(--text-medium);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* Botões */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.btn-dark {
+    background-color: var(--primary-green-dark);
+    color: var(--text-light);
+    border: 2px solid var(--primary-green-dark);
+}
+
+.btn-dark:hover {
+    background-color: var(--accent-green-mid); /* Ajustado para a cor de hover global */
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+}
+
+.btn-outline:hover {
+    background-color: rgba(22, 51, 33, 0.05);
+}
+
+.btn-large {
+    font-size: 1.1rem;
+    padding: 18px 32px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Nova Caixa de Chamada (Substitui o Upload) */
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-cta-box {
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 50px 40px;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 20px 40px rgba(22, 51, 33, 0.08);
+}
+
+.profile-cta-box h2 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.profile-cta-box p {
+    color: var(--text-medium);
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   FUNCIONALIDADES
+   ========================================================= */
+.divider {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+.features-header {
+    margin-bottom: 60px;
+}
+
+.features-header h2 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.features-header p {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.feature-number {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+}
+
+.feature-number::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 24px;
+    background-color: var(--success-green-bright);
+    margin-right: 12px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.feature-card p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+}
+
+/* =========================================================
+   MEETING BANNER (Transição Features -> CTA)
+   ========================================================= */
+#meeting-banner {
+    width: 100%;
+    background-color: var(--bg-light); 
+    overflow: hidden;
+    margin: 0; 
+}
+
+#meeting-banner .container-full {
+    width: 100%;
+    max-width: 100%; 
+}
+
+.meeting-img {
+    width: 100%;
+    height: 450px; 
+    object-fit: cover; 
+    object-position: center 30%; 
+    display: block;
+}
+
+/* =========================================================
+   BLOCO ESCURO INFERIOR (CTA + RODAPÉ COMPLETO)
+   ========================================================= */
+.dark-wrapper {
+    background-color: var(--primary-green-dark);
+    color: var(--text-light);
+}
+
+.cta {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 20px 80px;
+}
+
+.cta h2 {
+    color: var(--text-light);
+    font-size: 3rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    color: #CCCCCC; 
+    margin-bottom: 40px;
+}
+
+.btn-light {
+    background-color: var(--success-green-bright); 
+    color: var(--primary-green-dark);
+    border: 2px solid var(--success-green-bright);
+    font-weight: 700;
+}
+
+.btn-light:hover {
+    background-color: #9bd644;
+    border-color: #9bd644;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: var(--text-light);
+    font-family: var(--font-serif);
+}
+
+.footer-brand p {
+    color: #CCCCCC; 
+    font-size: 0.9rem;
+    max-width: 320px;
+}
+
+.footer h4 {
+    font-size: 0.75rem;
+    font-family: var(--font-sans);
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+}
+
+.footer-nav, .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav a, .footer-contact p {
+    color: #CCCCCC; 
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-nav a:hover {
+    color: var(--success-green-bright); 
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-top: 24px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #999999; 
+    font-size: 0.8rem;
+}
+
+/* =========================================================
+   RESPONSIVIDADE (Tablets e Telemóveis)
+   ========================================================= */
+@media (max-width: 900px) {
+    .hero-container, .features-grid, .footer-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-visual {
+        align-items: center;
+        width: 100%;
+    }
+    
+    .meeting-img {
+        height: 300px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .meeting-img {
+        height: 200px; 
+    }
+}
